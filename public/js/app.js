@@ -71080,7 +71080,6 @@ var NewDashBoard = function NewDashBoard(props) {
   function handleNoTaskModal(data) {
     if (data.length == 0) {
       setNoTaskModal(true);
-      setCompletedTasks(0);
     } else {
       setNoTaskModal(false);
       setUpdateTask(false);
@@ -71499,7 +71498,6 @@ var TaskList = function TaskList(props) {
     var num = 0;
     data.map(function (task, index) {
       if (task.is_completed == '1') {
-        console.log('count');
         num++;
       }
     });
