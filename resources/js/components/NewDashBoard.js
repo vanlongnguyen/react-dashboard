@@ -60,7 +60,6 @@ const NewDashBoard = (props) => {
     function handleNoTaskModal(data) {
         if (data.length == 0) {
             setNoTaskModal(true);
-            setCompletedTasks(0);
             
         } else {
             setNoTaskModal(false);
