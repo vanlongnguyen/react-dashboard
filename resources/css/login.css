@@ -1,0 +1,39 @@
+.border-header {
+    border-radius: 15px !important;
+    background: white;
+    border: none;
+}
+.radius-15 {
+    border-radius: 15px;
+}
+
+.card-login {
+    margin: 0 auto;
+    width: 270px;
+}
+.block-content {
+    margin-top: calc(50vh - 130px);
+    padding: 0;
+}
+
+.text {
+    text-align: left;
+    font-family: normal normal medium 20px/24px Montserrat !important;
+    letter-spacing: 0px;
+    color: #537178;
+    opacity: 1;
+}
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: #F4F4F6 0% 0% no-repeat padding-box;
+    opacity: .5;
+}
+.middle {
+    margin: 0 auto;
+    width: 300px;
+}

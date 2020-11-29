@@ -1,0 +1,47 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+}
+.content-block {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    position: fixed;
+    left: calc(50vw - 150px);
+    top: calc(50% - 150px);
+    z-index: 1050;
+}
+.border-header {
+    border-radius: 8px !important;
+    background: white;
+    border: none;
+}
+
+.input-text {
+    font-size: 14px;
+    background-color: #EEF1F8;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.card-header {
+    font-size: 20px;
+    background: none;
+    color: #537178;
+    border: 0;
+}

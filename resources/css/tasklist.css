@@ -1,0 +1,109 @@
+.btn {
+    height: 40px;
+}
+.btn-search {
+    padding:  0 25px;
+    height: 40px;
+    background: #D9DFEB url('../img/search-solid.svg') 5px center no-repeat padding-box;
+    opacity: 1;
+    border-radius:8px;
+    opacity: 1;
+    width: 100%;
+    font-size: 14px;
+    
+}
+.btn-newTask {
+    width: 100%;
+    margin: 15px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn-search {
+        width: 200px;
+    }
+    .btn-newTask {
+        width: 120px;
+        margin: 14px 0 0 10px;
+    }
+}
+.mt-middle {
+    margin-top: calc(50vh - 50px);
+}
+
+.card-body {
+    font-size: 20px;
+}
+
+.checkbox {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #95A4AB;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.text {
+    color: #5285EC;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #647278;
+}
+
+.item {
+    padding: 20px;
+}
+
+.control-block {
+    position: absolute;
+    right: 10px;
+}
+
+.btn-edit {
+    outline: none;
+    border: none;
+    height: 18px;
+    width: 30px;
+    background: transparent url('../img/pen-solid.svg') 5px center no-repeat padding-box;
+}
+
+.btn-delete {
+    outline: none;
+    border: none;
+    height: 18px;
+    width: 30px;
+    background: transparent url('../img/trash-solid.svg') 5px center no-repeat padding-box;
+}
+
+.percent {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+}
+
+.big-title {
+    color: #5285EC;
+    font-size: 60px;
+    position: relative;
+    top: -10px;
+}
+small {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.bg-white {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000A;
+    border-radius: 12px;
+    height: 160px;
+    padding: 15px;
+    margin-top:10px;
+    overflow: hidden;
+}
+.bg-white > ul {
+    padding: 0 20px;
+}
