@@ -27,6 +27,9 @@
             <arg value="--prefer-dist"/>
             <arg value="--no-progress"/>
         </exec>
+        <exec executable="sh" failonerror="true">
+            <arg value="mv composer.phar /usr/bin/composer"/>
+        </exec>
     </target>
     <target name="npm">
         <exec executable="npm">
@@ -187,6 +190,7 @@
     </target>
 
     <target name="prepare" unless="prepare.done" depends="clean" description="Prepare for build.">
+        <mkdir dir="/usr/local/bin/composer"/>
         <mkdir dir="${basedir}/build/api"/>
         <mkdir dir="${basedir}/build/coverage"/>
         <mkdir dir="${basedir}/build/logs"/>
