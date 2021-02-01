@@ -190,7 +190,7 @@
     </target>
 
     <target name="prepare" unless="prepare.done" depends="clean" description="Prepare for build.">
-        <mkdir dir="/usr/local/bin/composer"/>
+        <mkdir dir="${basedir}/usr/local/bin/composer"/>
         <mkdir dir="${basedir}/build/api"/>
         <mkdir dir="${basedir}/build/coverage"/>
         <mkdir dir="${basedir}/build/logs"/>
