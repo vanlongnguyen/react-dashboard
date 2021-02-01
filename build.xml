@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="php-automate-build-ant" default="full-build">
+<project name="php-automate-build-ant">
 
     <!-- By default the tools are managed by Composer in ${basedir}/vendor/bin -->
     <property name="pdepend" value="${basedir}/vendor/bin/pdepend"/>
@@ -27,8 +27,15 @@
             <arg value="--prefer-dist"/>
             <arg value="--no-progress"/>
         </exec>
-        <exec executable="sh" failonerror="true">
-            <arg value="mv composer.phar ${basedir}/usr/bin/composer"/>
+        <exec executable="/bin/bash" failonerror="true">
+            <arg value="-c"/>
+            <arg value="mv composer.phar /usr/bin/composer"/>
+
+        </exec>
+    </target>
+    <target name="copy_composer">
+        <exec executable="npm">
+            <arg value="install"/>
         </exec>
     </target>
     <target name="npm">
