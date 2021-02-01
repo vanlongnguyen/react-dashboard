@@ -19,7 +19,7 @@
         <property name="clean.done" value="true"/>
     </target>
 
-    <target name="composer" description="Install composer packages including require-dev.">
+    <target name="composer_get" description="Install composer packages including require-dev.">
         <get src="https://getcomposer.org/download/2.0.9/composer.phar" dest="composer.phar"/>
         <exec executable="php" failonerror="true">
             <arg value="${basedir}/composer.phar"/>
@@ -33,8 +33,13 @@
             <arg value="install"/>
         </exec>
     </target>
+    <target name="composer_install">
+        <exec executable="php">
+            <arg value="composer install"/>
+        </exec>
+    </target>
 
-    <target name="full-build" depends="prepare,npm,composer"
+    <target name="full-build" depends="prepare,npm,composer_get,composer_install"
             description="Perform static analysis, run tests, and generate project documentation.">
         <echo message="Built"/>
     </target>
