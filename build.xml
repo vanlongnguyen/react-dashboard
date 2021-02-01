@@ -33,8 +33,13 @@
             <arg value="install"/>
         </exec>
     </target>
+    <target name="composer_unit_tests">
+        <exec executable="php composer.phar">
+            <arg value="tests"/>
+        </exec>
+    </target>
 
-    <target name="full-build" depends="prepare,npm,composer_get,phpunit"
+    <target name="full-build" depends="prepare,npm,composer_get,composer_unit_tests"
             description="Perform static analysis, run tests, and generate project documentation.">
         <echo message="Built"/>
     </target>

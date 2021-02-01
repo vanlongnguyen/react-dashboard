@@ -49,6 +49,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "tests": "vendor/bin/phpunit --coverage-html build/logs/ tests/",
         "start": "php artisan serve",
         "migrate": "php artisan migrate",
         "post-autoload-dump": [
