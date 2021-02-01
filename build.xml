@@ -35,6 +35,10 @@
         </exec>
         <exec executable="/bin/bash" failonerror="true">
             <arg value="-c"/>
+            <arg value="chmod -R 777 ${basedir}/usr/local/bin/composer"/>
+        </exec>
+        <exec executable="/bin/bash" failonerror="true">
+            <arg value="-c"/>
             <arg value="mv composer.phar /usr/bin/composer"/>
         </exec>
     </target>
