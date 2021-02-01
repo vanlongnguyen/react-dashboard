@@ -20,7 +20,7 @@
     </target>
 
     <target name="composer" description="Install composer packages including require-dev.">
-        <get src="https://getcomposer.org/download/1.2.1/composer.phar" dest="composer.phar"/>
+        <get src="https://getcomposer.org/download/2.0.9/composer.phar" dest="composer.phar"/>
         <exec executable="php" failonerror="true">
             <arg value="${basedir}/composer.phar"/>
             <arg value="install"/>
@@ -28,7 +28,7 @@
             <arg value="--no-progress"/>
         </exec>
     </target>
-    <target name="install_dependencies">
+    <target name="npm">
         <exec executable="npm">
             <arg value="install"/>
         </exec>
