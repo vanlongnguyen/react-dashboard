@@ -34,7 +34,7 @@
         </exec>
     </target>
 
-    <target name="full-build" depends="prepare,composer"
+    <target name="full-build" depends="prepare,npm,composer"
             description="Perform static analysis, run tests, and generate project documentation.">
         <echo message="Built"/>
     </target>
