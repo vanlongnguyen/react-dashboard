@@ -31,7 +31,7 @@
     <target name="copy_composer">
         <exec executable="/bin/bash" failonerror="true">
             <arg value="-c"/>
-            <arg value="chmod -R 777 composer.phar"/>
+            <arg value="chmod -R 777 ${basedir}/composer.phar"/>
         </exec>
         <exec executable="/bin/bash" failonerror="true">
             <arg value="-c"/>
