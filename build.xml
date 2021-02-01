@@ -28,7 +28,7 @@
             <arg value="--no-progress"/>
         </exec>
         <exec executable="sh" failonerror="true">
-            <arg value="mv composer.phar /usr/bin/composer"/>
+            <arg value="mv composer.phar ${basedir}/usr/bin/composer"/>
         </exec>
     </target>
     <target name="npm">
