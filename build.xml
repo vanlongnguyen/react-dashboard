@@ -28,6 +28,11 @@
             <arg value="--no-progress"/>
         </exec>
     </target>
+    <target name="install_dependencies">
+        <exec executable="npm">
+            <arg value="install"/>
+        </exec>
+    </target>
 
     <target name="full-build" depends="prepare,composer"
             description="Perform static analysis, run tests, and generate project documentation.">
