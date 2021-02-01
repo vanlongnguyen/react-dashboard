@@ -34,8 +34,8 @@
         </exec>
     </target>
     <target name="composer_unit_tests">
-        <exec executable="php composer.phar">
-            <arg value="tests"/>
+        <exec executable="php">
+            <arg value="composer.phar tests"/>
         </exec>
     </target>
 
