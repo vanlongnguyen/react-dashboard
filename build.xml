@@ -195,10 +195,10 @@
         <property name="prepare.done" value="true"/>
     </target>
 
-    <target name="quick-build" depends="prepare,composer,lint,phpunit-no-coverage"
+    <!-- <target name="quick-build" depends="prepare,composer,lint,phpunit-no-coverage"
             description="Perform lint check and run tests without generating code coverage reports.">
         <echo message="Built"/>
-    </target>
+    </target> -->
 
     <target name="static-analysis" depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci"
             description="Perform static analysis.">
